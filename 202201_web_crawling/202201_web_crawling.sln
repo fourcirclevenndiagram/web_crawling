@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "202201_web_crawling", "202201_web_crawling\202201_web_crawling.pyproj", "{74C41FDB-51A6-48E4-A123-2E4D6533ACBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74C41FDB-51A6-48E4-A123-2E4D6533ACBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C41FDB-51A6-48E4-A123-2E4D6533ACBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1C5C4BF-C315-44ED-92A5-96473B6F7D37}
+	EndGlobalSection
+EndGlobal
