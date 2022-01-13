@@ -5,12 +5,12 @@ res2 = requests.get("http://google.com")
 print("応答コード : ", res.status_code) # 200なら正常
 print("応答コード : ", res2.status_code) # 200なら正常
 
-if res.status_code == requests.code.ok:
+if res.status_code == requests.codes.ok:
     print("正常です")
 else:
     print("問題が発生しました。[エラーコード ", res.status_code, "]")
 
-if res2.status_code == requests.code.ok:
+if res2.status_code == requests.codes.ok:
     print("正常です")
 else:
     print("問題が発生しました。[エラーコード ", res2.status_code, "]")
