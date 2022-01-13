@@ -8,7 +8,12 @@ p = re.compile("ca.e")
 # ^ (^de)  : 文字列の始まり ex) desk, destination  // fade (X)
 # $ (se$)  : 文字列の最後   ex) case, base // face (X)
 
-m = p.match("caffe")
-n = p.match("case")
-# print(m.group())    # マッチングに失敗したのでエラー発生
-print(n.group())      # マッチングに成功したので正常終了
+def print_match(n):
+    # m = p.match("caffe")
+    n = p.match("case")
+    # print(m.group())    # Exception has occurred: AttributeError. NoneType' object has no attribute 'group'
+    print(n.group())      # マッチングに成功したので正常終了
+    if n:
+        print(n.group())
+    else:
+        print("マッチング失敗")
