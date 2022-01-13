@@ -10,10 +10,13 @@ p = re.compile("ca.e")
 
 def print_match(n):
     # m = p.match("caffe")
-    n = p.match("case")
+    
     # print(m.group())    # Exception has occurred: AttributeError. NoneType' object has no attribute 'group'
     print(n.group())      # マッチングに成功したので正常終了
     if n:
         print(n.group())
     else:
         print("マッチング失敗")
+
+n = p.match("case")
+print_match(n)
