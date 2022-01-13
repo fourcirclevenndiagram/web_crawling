@@ -10,5 +10,5 @@ p = re.compile("ca.e")
 
 m = p.match("caffe")
 n = p.match("case")
-print(m.group())    # マッチングに失敗したらエラー発生
-print(n.group())    # マッチングに失敗したらエラー発生
+# print(m.group())    # マッチングに失敗したのでエラー発生
+print(n.group())      # マッチングに成功したので正常終了
