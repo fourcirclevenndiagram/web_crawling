@@ -12,11 +12,16 @@ def print_match(n):
     # m = p.match("caffe")
     
     # print(m.group())    # Exception has occurred: AttributeError. NoneType' object has no attribute 'group'
-    print(n.group())      # マッチングに成功したので正常終了
+    # print(n.group())    # マッチングに成功したので正常終了
     if n:
-        print(n.group())
+        print("n.group(): ", n.group()) # 一致する文字列リターン
+        print("n.string : ", n.string)   # 入力された文字列
+        print("n.start(): ", n.start()) # 一致する文字列の最初のインデックス
+        print("n.end()  : ", n.end())     # 一致する文字列の最後のインデックス
     else:
         print("マッチング失敗")
 
-n = p.match("case")
+n = p.match("careless") # match : 与えられた文字列の最初から一致しているか確認
 print_match(n)
+o = p.search("good cafe") # search : 与えられた文字列の中で一致しているのが存在しているか確認
+print_match(o)
