@@ -1,8 +1,7 @@
 import requests
 # res = requests.get("http://naver.com")
-res = requests.get("http://dnet.nkcnet.co.jp/scripts/dneo/dneo.exe?")
-res2 = requests.get("http://google.com")
-print("応答コード : ", res.status_code) # 200なら正常
+res2 = requests.get("http://vkje2oigw223.com")
+# print("応答コード : ", res.status_code) # 200なら正常
 print("応答コード : ", res2.status_code) # 200なら正常
 res2.raise_for_status()
 print("ウェブスクレイピングを開始します")
@@ -19,7 +18,8 @@ print("ウェブスクレイピングを開始します")
 # res.raise_for_status()                   # Exception has occurred: HTTPError
 # print("ウェブスクレイピングを開始します")   # Exception has occurred: HTTPError
 
-print(len(res.text))
 print(res2.text)
-with open("mygoogle.html", "w", encoding="utf8") as f:
+with open("mynadocoding.html", "w", encoding="utf8") as f:
     f.write(res2.text)
+
+
