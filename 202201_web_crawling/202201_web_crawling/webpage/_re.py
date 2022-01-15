@@ -26,7 +26,7 @@ n = p.match("careless") # match : 与えられた文字列の最初から一致�
 print_match(n)
 o = p.search("good cafe") # search : 与えられた文字列の中で一致しているのが存在しているか確認
 print_match(o)
-lst = p.findall("careless good care cafe") # findall : 一致する全てをリスト形式でリターン
+lst = p.findall("careless good care cafecafefe") # findall : 一致する全てをリスト形式でリターン
 print(lst)
 
 # 1. p = re.compile("求めている携帯")
