@@ -7,3 +7,7 @@ res.raise_for_status()
 
 soup = BeautifulSoup(res.text, "lxml")
 print(soup.title)
+print(soup.title.get_text())
+print(soup.a)
+print(soup.a.attrs)
+print(soup.a["href"])
