@@ -29,7 +29,7 @@ print_match(o)
 lst = p.findall("careless good care cafecafefe") # findall : 一致する全てをリスト形式でリターン
 print(lst)
 
-# 1. p = re.compile("求めている携帯")
+# 1. p = re.compile("求めている形態")
 # 2. n = p.match("比較対象の文字列") : 与えられた文字列の最初から一致しているか確認
 # 3. n = p.search("比較対象の文字列") : 与えられた文字列の中で一致しているのが存在しているか確認
 # 4. lst = p.findall("比較対象の文字列") : 一致する全てをリスト形式でリターン
