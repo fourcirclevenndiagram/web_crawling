@@ -11,3 +11,6 @@ print(soup.title.get_text())
 print(soup.a)
 print(soup.a.attrs)
 print(soup.a["href"])
+
+print(soup.find("a", attrs={"class":"Nbtn_upload"}))
+print(soup.find(attrs={"class":"Nbtn_upload"}))
