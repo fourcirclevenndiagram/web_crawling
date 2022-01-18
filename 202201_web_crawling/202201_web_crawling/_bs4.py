@@ -27,3 +27,12 @@ rank03 = rank02.next_sibling.next_sibling
 print(rank03.a.get_text())
 
 print(rank01.parent)
+rank02 = rank01.find_next_sibling("li")
+print(rank02.a.get_text())
+rank03 = rank02.find_next_sibling("li")
+print(rank03.a.get_text())
+
+soup = BeautifulSoup(res.text, "lxml")
+cartoons = soup.find_all("a", attrs={"class":"title"})
+for cartoon in cartoons:
+    print(cartoon.get_text())
