@@ -55,3 +55,17 @@ for cartoon in cartoons:
     title = cartoon.a.get_text()
     link = "https://comic.naver.com" + cartoon.a["href"]
     print(title, link)
+
+for cartoon in cartoons:
+    title = cartoon.a.get_text()
+    link = "https://comic.naver.com" + cartoon.a["href"]
+    print(title, link)
+
+total_rates = 0
+cartoons = soup.find_all("div", attrs={"class":"rating_type"})
+for cartoon in cartoons:
+    rate = cartoon.find("strong").get_text()
+    print(rate)
+    total_rates += float(rate)
+print("総点     : ", total_rates)
+print("平均点数 : ", total_rates / len(cartoons))
