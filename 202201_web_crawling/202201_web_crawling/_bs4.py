@@ -33,6 +33,18 @@ rank03 = rank02.find_next_sibling("li")
 print(rank03.a.get_text())
 
 soup = BeautifulSoup(res.text, "lxml")
+# Naver Webtoon リストをすべてインポート
 cartoons = soup.find_all("a", attrs={"class":"title"})
+# a elementのclass属性がtitleである全てのelementをリターン
 for cartoon in cartoons:
     print(cartoon.get_text())
+
+print("つづき")
+url = "https://comic.naver.com/webtoon/list?titleId=783054"
+res = requests.get(url)
+res.raise_for_status()
+soup = BeautifulSoup(res.text, "lxml")
+
+cartoons = soup.find_all("td", attrs={"class":"title"})
+title = cartoons[0].a.get_text()
+print(title)
