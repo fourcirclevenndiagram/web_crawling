@@ -26,5 +26,7 @@ for item in items:
         rate_cnt = "評価点数の数なし"
 
     print(name, price, rate, rate_cnt)
+    print(soup.find_all("li", attrs={"class":re.compile("^search-product")}))
+    
 
 
